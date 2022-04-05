@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class=" card" style="width: 700px; margin-left: 20px "> 
+		<form action="StudentServlet" method="post" class="form-control">
+		<label>Mã sinh viên </label>
+		<input class="form-control" name="maSv"> 
+		
+		<label>Họ tên </label>
+		<input class="form-control" name="hoTen"> 
+		
+		<div class="mt-3 mb-3">
+			<label>Giới Tính </label>
+			<input class="form-check-input" name="gioiTinh" type="radio" value="true">Nam 
+			<input class="form-check-input" name="gioiTinh" type="radio" value="false">Nu
+		
+		</div>
+		
+		<label>Chuyên Ngành </label>
+			<select class="form-select" name="chuyenNganh"> 
+				<option value="UDPM">Ứng dụng phần mềm</option>
+				<option value="TKDH">Thiết kế đồ họa</option>
+				<option value="LTMT">Lập trình máy tính</option>
+				<option value="Marketing">Marketing-Sale</option>
+			
+			</select>
+		
+		<label>Số điện thoại </label>
+		<input class="form-control" name="sdt"> 
+		
+		<label>Email </label>
+		<input class="form-control" name="email"> 
+		
+		<label>Thời gian  </label>
+		<input class="form-control" name="thoiGian" type="date"> 
+	
+		<button type="submit" class="btn btn-outline-warning mt-2">Thêm mới</button>
+	</form>
+	
+	
+	</div>
+	
+	<jsp:include page="/views/table.jsp">
+		<jsp:param value="${bean}" name="list"/>
+	
+	</jsp:include>
+
+
+</body>
+</html>

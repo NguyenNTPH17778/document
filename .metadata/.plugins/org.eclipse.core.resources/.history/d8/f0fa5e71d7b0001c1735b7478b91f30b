@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="PH17778_NguyenThiNguyen_Lab5_310322">
+        <property name="context-root" value="PH17778_NguyenThiNguyen_Lab5_310322"/>
+        <property name="java-output-path" value="/PH17778_NguyenThiNguyen_Lab5_310322/build/classes"/>
+    </wb-module>
+</project-modules>

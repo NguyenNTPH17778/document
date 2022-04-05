@@ -1,0 +1,39 @@
+package bai1;
+
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.testng.annotations.BeforeTest;
+
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+
+public class fpolyTest {
+	
+	fpoly fpl;
+  @Test
+  public void f() {
+	  WebDriverManager.chromedriver().setup();
+	  ChromeDriver cd = new ChromeDriver();
+	  cd.get("https://lms.poly.edu.vn/");  
+	  cd.getTitle();
+	  assertEquals(cd.getTitle(), fpl);
+	  cd.close();
+	  
+  }
+  @BeforeTest
+  public void beforeTest() {
+	  fpl = new fpoly();
+  }
+
+  @AfterTest
+  public void afterTest() {
+	  fpl = null;
+  }
+
+}

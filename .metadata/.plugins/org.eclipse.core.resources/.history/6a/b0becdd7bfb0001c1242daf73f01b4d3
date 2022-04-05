@@ -1,0 +1,10 @@
+package BussinessLayer.IServiceBUS;
+
+import BussinessLayer.Entities.Category;
+
+public interface IServiceCategories {
+	public Category addCategory(Category cte) throws Exception;
+	public Category UpdateCategory(Category cte) throws Exception;
+	public Category DeleteCategory(Category cte) throws Exception;
+
+}

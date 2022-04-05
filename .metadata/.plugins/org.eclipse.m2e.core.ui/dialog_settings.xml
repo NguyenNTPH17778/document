@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\84868\f8-shop\SOF304_IT16309"/>
+			<item value="C:\Users\84868\f8-shop\Java_4"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="https://repo1.maven.org/maven2/archetype-catalog.xml"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Lab6_Sof304"/>
+			<item value="PH17778_NguyenThiNguyen_Lab5_310322"/>
+			<item value="Lab5_Java4"/>
+			<item value="NguyenPH17778_Assignment_Java4"/>
+			<item value="NguyenPh17778_Assignment_Java4"/>
+			<item value="Ph17778_Nguyen"/>
+			<item value="Lab5_SOF304"/>
+			<item value="Assignment_Java4"/>
+			<item value="ThueTestNG"/>
+			<item value="DemoTestNG"/>
+			<item value="DemoHibernate"/>
+			<item value="IT16309Demo"/>
+			<item value="AssignmentNhom8"/>
+			<item value="TestAssignment01"/>
+			<item value="Test_ass"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Lab6_Sof304"/>
+			<item value="PH17778_NguyenThiNguyen_Lab5_310322"/>
+			<item value="Lab5_Java4"/>
+			<item value="NguyenPH17778_Assignment_Java4"/>
+			<item value="NguyenPh17778_Assignment_Java4"/>
+			<item value="Ph17778_Nguyen"/>
+			<item value="Lab5_SOF304"/>
+			<item value="Assignment_Java4"/>
+			<item value="ThueTestNG"/>
+			<item value="DemoTestNG"/>
+			<item value="DemoHibernate"/>
+			<item value="IT16309Demo"/>
+			<item value="AssignmentNhom8"/>
+			<item value="TestAssignment01"/>
+			<item value="Test_ass"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,157 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị Khách Hàng</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    .card{
+      background-image: url("images/qtkh.jpg");
+ 
+    }
+</style>
+<body class="container">
+    <div > 
+        <img src="images/Banner4.jpg" width="100%"  alt="...">
+    </div>
+
+    <div>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/views/admin/QTKH.jsp">Admin Client</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/admin/QTNV.jsp">Administrative Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+     
+        </ul>
+  </div>
+
+   <div class="card mt-4 mb-5 ms-5 me-5 ">
+    <div class="ms-5 me-5 mt-3">
+      <div class="row">    <label class="text-center fs-4 text-danger fw-bold">Quản trị Khách Hàng</label></div>
+      <form action="AdminServlet" method="post" >
+          <div class="mb-3">
+            <label for="exampleInputIdNV1" class="form-label">ID_NV</label>
+            <input type="text" class="form-control" id="exampleInputIdNV1" >
+          </div>
+
+          <div class="mb-3">
+              <label for="exampleInputHoTen1" class="form-label">HOTEN</label>
+              <input type="text" class="form-control" id="exampleInputHoTen1" >
+            </div>
+
+          
+            <div class="row mb-3">
+              <label class="form-label">GioiTinh</label>
+              <div class="col-sm-1"> <input type="radio" value="0"> Nam </div>  
+              <div class="col-sm-1"><input type="radio"  value="1">  Nữ</div>
+              <div class="col-10"></div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" >
+            </div>
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+
+          
+          <div class="mb-3">
+              <label for="exampleInputPhone1" class="form-label">Số điện thoại</label>
+              <input type="text" class="form-control" id="exampleInputPhone1" >
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputDiaChi1" class="form-label">Địa Chỉ</label>
+              <input type="text" class="form-control" id="exampleInputDiaChi1" >
+            </div>
+
+          
+        <div class="row">
+          <div class="col-sm-1"> 
+               <button type="submit" class="btn btn-outline-info text-primary mb-3" value="0">Create</button>
+          </div>
+
+          <div class="col-1">
+              <button type="submit" class="btn btn-outline-info text-primary mb-3" value="1">Update</button>
+          </div>
+
+          <div class="col-1">    
+              <button type="submit" class="btn btn-outline-info text-primary mb-3" value="2">Delete</button>
+          </div>
+
+        </div>
+
+        </form>
+  </div>
+   </div>
+   
+    <table class="table table-danger">
+      <thead>
+        <th> ID_NV</th>
+        <th> HOTEN</th>
+        <th> GioiTinh</th>
+        <th>Email </th>
+        <th> Password</th>
+        <th> SĐT</th>
+        <th> DiaChi</th>
+      </thead>
+
+      <tbody>
+        <tr>
+
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+
+        </tr>
+
+        <tr>
+
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+
+        </tr>
+
+        <tr>
+
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+
+        </tr>
+
+      </tbody>
+   </table>
+
+
+    <script src="js/jquery.min.js"> </script>
+    <script src="js/popper.min.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+</body>
+</html>

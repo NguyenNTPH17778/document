@@ -1,0 +1,46 @@
+
+
+import java.util.*;
+import org.junit.Assert;
+import org.junit.Test;
+
+@Generated(value="org.junit-tools-1.1.0")
+public class TinhToanTest{
+
+	private TinhToan createTestSubject()  {
+	 return new TinhToan();
+	}
+
+	@MethodRef(name="Cong", signature="(II)I")
+	@Test
+	public void testCong() throws Exception {
+	TinhToan testSubject;int a = 0;
+	int b = 0;
+	int result;
+	
+	// default test
+	testSubject=createTestSubject();result=testSubject.Cong(a, b);
+	}
+
+	@MethodRef(name="Chia", signature="(II)I")
+	@Test
+	public void testChia() throws Exception {
+	TinhToan testSubject;int a = 0;
+	int b = 0;
+	int result;
+	
+	// default test
+	testSubject=createTestSubject();result=testSubject.Chia(a, b);
+	}
+
+	@MethodRef(name="Nhan", signature="(II)I")
+	@Test
+	public void testNhan() throws Exception {
+	TinhToan testSubject;int a = 0;
+	int b = 0;
+	int result;
+	
+	// default test
+	testSubject=createTestSubject();result=testSubject.Nhan(a, b);
+	} 
+}

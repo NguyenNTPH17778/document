@@ -1,0 +1,13 @@
+
+
+import java.util.*;
+import org.junit.Assert;
+import org.junit.Test;
+
+@Generated(value="org.junit-tools-1.1.0")
+public class TinhToanTest{
+
+	private TinhToan createTestSubject()  {
+	 return new TinhToan();
+	} 
+}

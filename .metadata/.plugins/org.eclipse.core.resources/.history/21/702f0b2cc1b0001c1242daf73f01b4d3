@@ -1,0 +1,14 @@
+package BussinessLayer.IServiceBUS;
+
+import java.util.List;
+
+import org.apache.catalina.User;
+
+public interface IServiceUser {
+	public User addUser(User entity) throws Exception;
+	public User UpdateUser(User entity) throws Exception;
+	public User DeleteCategory(User entity) throws Exception;
+	public List<User> selectAll()throws Exception;
+	public User findUser(User entity);
+	public User loginUser(String email, String password);
+}

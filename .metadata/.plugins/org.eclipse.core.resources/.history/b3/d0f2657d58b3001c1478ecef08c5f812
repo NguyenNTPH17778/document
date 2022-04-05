@@ -1,0 +1,40 @@
+package BussinessLayer.ServiceBUS;
+
+import java.util.List;
+
+import BussinessLayer.Entities.Product;
+import BussinessLayer.IServiceBUS.IServiceProduct;
+
+public class ServiceDAO_Product implements IServiceProduct{
+
+	@Override
+	public Product addProduct(Product entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product UpdateProduct(Product entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product DeleteCategory(Product entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> selectAll() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product findProduct(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

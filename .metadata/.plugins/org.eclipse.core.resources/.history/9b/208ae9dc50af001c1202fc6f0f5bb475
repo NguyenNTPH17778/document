@@ -1,0 +1,5 @@
+package beans.form_data;
+
+public class RegisterData {
+	
+}

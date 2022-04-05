@@ -1,0 +1,40 @@
+package DataAccessLayer;
+
+import java.util.List;
+
+import BussinessLayer.Entities.Category;
+import BussinessLayer.IServiceBUS.IServiceCategories;
+
+public class ServiceCategories implements IServiceCategories{
+
+	@Override
+	public Category addCategory(Category entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Category UpdateCategory(Category entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Category DeleteCategory(Category entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Category> selectAll() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Category findCategory(Category entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

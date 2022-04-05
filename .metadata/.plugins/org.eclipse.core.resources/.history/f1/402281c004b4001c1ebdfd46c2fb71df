@@ -1,0 +1,9 @@
+package bai6_4;
+
+import org.testng.annotations.Test;
+
+public class b2_Lab6 {
+  @Test
+  public void f() {
+  }
+}

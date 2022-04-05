@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị Khách Hàng</title>
+    <link rel="stylesheet" href="/Assignment_Java4/css/bootstrap.min.css">
+</head>
+<style>
+    
+</style>
+<body class="container">
+
+
+	<div class="col-4"></div>
+		<div class="border border-white col-lg-6 rounded  col-8 ">
+			<div class="text-center form-field col-lg-12 ">
+				<label class="p-2">Tài khoản:</label> <input style="width: 300px"
+					id="name" class="input-text js-input" type="text"
+					placeholder="Tài khoản">
+			</div>
+			<div class="text-center form-field col-lg-12 p-1">
+				<label class="p-2">Mật khẩu:</label> <input style="width: 300px"
+					id="password" type="password" placeholder="Mật khẩu">
+			</div>
+		</div>
+
+	</form>
+
+
+    <script src="/Assignment_Java4/js/jquery.min.js"> </script>
+    <script src="/Assignment_Java4/js/popper.min.js"> </script>
+    <script src="/Assignment_Java4/js/bootstrap.min.js"> </script>
+</body>
+</html>

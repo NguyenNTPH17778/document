@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Đăng nhập</title>
+	<h1 class="text-center p-4">Đăng nhập</h1>
+	<form action="/ASMtuehvph13476/users/Login" method="POST">
+	<div class="col-4">
+	
+	</div>
+		<div class="border border-white col-lg-6 rounded  col-8 ">
+			<div class="text-center form-field col-lg-12 ">
+				<label class="p-2">Tài khoản:</label> <input style="width: 300px"
+					id="name" class="input-text js-input" type="text"
+					placeholder="Tài khoản">
+			</div>
+			<div class="text-center form-field col-lg-12 p-1">
+				<label class="p-2">Mật khẩu:</label> <input style="width: 300px"
+					id="password" type="password" placeholder="Mật khẩu">
+			</div>
+		</div>
+
+	</form>

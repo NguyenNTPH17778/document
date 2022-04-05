@@ -1,0 +1,116 @@
+package PresentationLayer.controller;
+
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+
+import javax.security.auth.message.callback.PrivateKeyCallback.Request;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.beanutils.BeanUtils;
+
+import BussinessLayer.Entities.Admin;
+import BussinessLayer.Entities.User;
+import BussinessLayer.ServiceBUS.ServiceDAO_User;
+
+@WebServlet({"/admin/login", "/admin/index"})
+public class UserServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	ServiceDAO_User sv_us;
+    public UserServlet() {
+        super();
+      sv_us  = new ServiceDAO_User();
+        // TODO Auto-generated constructor stub
+    }
+    
+    private void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	BussinessLayer.Entities.User ad ;
+    	String email = request.getParameter("email");  
+    	String password = request.getParameter("password");  
+    	ad = sv_us.loginUser(email, password);
+    	
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String uri = request.getRequestURI();
+		
+		if(uri.contains("login")) {
+		
+		
+			login(request, response);
+		}
+		
+		if(uri.contains("index")) {
+			
+			try {
+				index(request, response);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+	
+	
+	private void index(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		String x = request.getParameter("add");
+		if(x != null) {
+			User admin = new User();
+			try {
+				BeanUtils.populate(admin, request.getParameterMap());
+				sv_us.addUser(entity);
+				if(sv_us.addUser(entity) == null) {
+					request.getRequestDispatcher("/views/admin/user/index.jsp").forward(request, response);
+				}else {
+					request.getRequestDispatcher("/views/admin/index.jsp").forward(request, response);
+				}
+				
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (InvocationTargetException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+		}
+		
+		request.getRequestDispatcher("/views/admin/user/index.jsp").forward(request, response);
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try {
+			request.setCharacterEncoding("UTF-8");
+			response.getCharacterEncoding();
+	
+			String uri = request.getRequestURI();
+			if(uri.contains("login")) {
+				
+				login(request, response);
+			}
+			
+
+			if(uri.contains("index")) {
+				
+				index(request, response);
+			}
+			
+			
+
+	
+		} catch (Exception e) {
+			
+		}
+		
+		
+
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package Demo;
+
+public class kkk {
+	public  String sa = null;
+	static {
+		System.out.println("Hello");
+	}
+	public static void main(String[] args) {
+		System.out.println("kkk");
+	}
+}

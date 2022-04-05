@@ -1,0 +1,40 @@
+package bai6_4;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+
+import java.security.PublicKey;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+
+public class firsttestngfile {
+	public String url = "https://lms.poly.edu.vn/";
+	String driverPath = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
+	public WebDriver driver;
+	
+  @Test
+  public void f() {
+	  String expectedTitle = "Learning Management System | Hệ thống quản trị học tập | FPT Polytechnic Việt Nam";
+	  String actualTitle = driver.getTitle();
+	  Assert.assertEquals(actualTitle, expectedTitle);
+	  
+  }
+  @BeforeTest
+ 
+	  public void launchBrowser() {
+		  System.out.println("launching chrome browser");
+		  System.setProperty("webdriver.chrome.driver", driverPath);
+	  }
+	  
+
+
+  @AfterTest
+  public void afterTest() {
+	  driver.close();
+	  
+	  
+  }
+
+}

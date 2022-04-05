@@ -1,0 +1,5 @@
+package BussinessLayer.IServiceBUS;
+
+public interface IServiceCategories {
+
+}

@@ -1,0 +1,37 @@
+<%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+     <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"  prefix="fmt" %>
+
+<table class="table">
+	<thead >
+		<th>Mã sinh viên </th>
+		<th> Họ tên</th>
+		<th> Giới tính</th>
+		<th> Chuyên ngành</th>
+		<th> Số điện thoại</th>
+		<th>Email</th>
+		<th>Thời gian</th>
+	</thead>
+	
+	<tbody>
+		<c:forEach var="sinhvien" items="${param.list}">
+			<tr> 
+				<td>${sinhvien.maSv }</td>
+				<td>${sinhvien.hoTen }</td>
+				<td>
+					<c:if test="${ sinhvien.gioiTinh }">Nam</c:if>
+					<c:if test="${ !sinhvien.gioiTinh }">Nu</c:if>
+				
+				</td>
+				<td>${sinhvien.chuyenNganh }</td>
+				<td>${sinhvien.sdt }</td>
+				<td>${sinhvien.email }</td>
+				<td>{sinhvien.thoiGian }</td>			
+			</tr>
+		</c:forEach>
+	
+	</tbody>
+
+
+</table>

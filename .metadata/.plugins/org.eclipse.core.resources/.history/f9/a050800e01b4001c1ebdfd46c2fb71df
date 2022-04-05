@@ -1,0 +1,9 @@
+package bai6_4;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class firsttestngfile {
+
+}

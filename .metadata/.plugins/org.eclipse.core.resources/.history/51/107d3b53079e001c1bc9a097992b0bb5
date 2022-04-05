@@ -1,0 +1,27 @@
+package Sof304.B1;
+
+public class TinhToan {
+	public int tinhtong (int a, int b) {
+		int tong = a + b;
+		return tong;
+	}
+	
+	public int tinhtru (int a, int b) {
+		int tru = a - b;
+		return tru;
+	}
+	
+	public int phepnhan (int a, int b) {
+		int nhan = a * b;
+		return nhan;
+	}
+	
+	public int phepchia (int a, int b) {
+		int chia = a / b;
+		return chia;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

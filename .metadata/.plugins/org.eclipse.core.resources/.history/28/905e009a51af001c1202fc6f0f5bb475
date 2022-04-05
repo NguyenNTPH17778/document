@@ -1,0 +1,11 @@
+package Data;
+
+public class RegisterData {
+	private String hoTen;
+	private String gioiTinh;
+	private String sdt;
+	private String dia_chi;
+	private String email;
+	private String password;
+	
+}

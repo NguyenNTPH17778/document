@@ -1,0 +1,19 @@
+package bai6_4;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Bai4 {
+	@Test
+	public void f() {
+		  WebDriverManager.chromedriver().setup();
+			ChromeDriver cd = new ChromeDriver();
+			cd.get("https://demo.guru99.com/v4/");
+
+		cd.findElementByName("UserID").sendKeys("mngr394913");
+		cd.findElementByName("Password").sendKeys("revegAz");
+		cd.findElementByName("LOGIN").click();
+	}
+}

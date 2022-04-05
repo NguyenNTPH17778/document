@@ -1,0 +1,11 @@
+package Demo;
+
+public class kkk {
+	public String sa = null;
+	
+	public static void main(String[] args) {
+		kkk kkk = new kkk();
+		kkk.sa = "Nguyen";
+		System.out.println(kkk.sa);
+	}
+}

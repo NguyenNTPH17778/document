@@ -1,0 +1,12 @@
+package Sof304.B1;
+
+import org.junit.runner.RunWith;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses(
+
+{TinhToanTest.class}
+)
+public class TestSuite{ // nothing
+}
+

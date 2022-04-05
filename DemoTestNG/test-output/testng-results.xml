@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-25T00:17:27 ICT" name="Default suite" finished-at="2022-03-25T00:17:32 ICT" duration-ms="4576">
+    <groups>
+    </groups>
+    <test started-at="2022-03-25T00:17:27 ICT" name="Default test" finished-at="2022-03-25T00:17:32 ICT" duration-ms="4576">
+      <class name="com.com.TestNG.NewTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.com.TestNG.NewTest@29626d54]" started-at="2022-03-25T00:17:27 ICT" name="beforeTest" finished-at="2022-03-25T00:17:27 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="chuvi()[pri:0, instance:com.com.TestNG.NewTest@29626d54]" started-at="2022-03-25T00:17:27 ICT" name="chuvi" finished-at="2022-03-25T00:17:27 ICT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chuvi -->
+        <test-method signature="chuviNO()[pri:0, instance:com.com.TestNG.NewTest@29626d54]" started-at="2022-03-25T00:17:27 ICT" name="chuviNO" finished-at="2022-03-25T00:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chuviNO -->
+        <test-method signature="f()[pri:0, instance:com.com.TestNG.NewTest@29626d54]" started-at="2022-03-25T00:17:27 ICT" name="f" finished-at="2022-03-25T00:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="f1()[pri:0, instance:com.com.TestNG.NewTest@29626d54]" started-at="2022-03-25T00:17:27 ICT" name="f1" finished-at="2022-03-25T00:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method signature="f2()[pri:0, instance:com.com.TestNG.NewTest@29626d54]" started-at="2022-03-25T00:17:27 ICT" name="f2" finished-at="2022-03-25T00:17:32 ICT" duration-ms="4512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.com.TestNG.NewTest@29626d54]" started-at="2022-03-25T00:17:32 ICT" name="afterTest" finished-at="2022-03-25T00:17:32 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.com.TestNG.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
